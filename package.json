@@ -1,0 +1,29 @@
+{
+  "name": "spreadsheets-middleware",
+  "version": "0.0.1",
+  "description": "`node-google-spreadsheets` wrapper for express ",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "google-spreadsheet": "^2.0.3",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  },
+  "scripts": {
+    "test": "mocha --ui tdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyoNkmr/spreadsheets-middleware.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyoNkmr/spreadsheets-middleware/issues"
+  },
+  "homepage": "https://github.com/RyoNkmr/spreadsheets-middleware#readme"
+}
