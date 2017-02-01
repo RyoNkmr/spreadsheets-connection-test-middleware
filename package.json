@@ -1,5 +1,5 @@
 {
-  "name": "spreadsheets-middleware",
+  "name": "spreadsheets-connection-test-middleware",
   "version": "0.0.1",
   "description": "`node-google-spreadsheets` wrapper for express ",
   "main": "index.js",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RyoNkmr/spreadsheets-middleware.git"
+    "url": "git+https://github.com/RyoNkmr/spreadsheets-connection-test-middleware.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RyoNkmr/spreadsheets-middleware/issues"
+    "url": "https://github.com/RyoNkmr/spreadsheets-connection-test-middleware/issues"
   },
-  "homepage": "https://github.com/RyoNkmr/spreadsheets-middleware#readme"
+  "homepage": "https://github.com/RyoNkmr/spreadsheets-connection-test-middleware#readme"
 }

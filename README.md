@@ -1,4 +1,4 @@
-# spreadsheets-middleware
+# spreadsheets-connection-test-middleware
 express middleware
 
 ## setting
@@ -9,7 +9,7 @@ express middleware
 var express = require('express');
 var app = express();
 
-var spreadsheetsMiddleware = require('spreadsheets-middleware');
+var spreadsheetsConnectionTestMiddleware = require('spreadsheets-connection-test-middleware');
 
 var spreadsheetSettings = {
  // ex.) https://docs.google.com/spreadsheets/d/HOGEHOGEHOGEHOGEHOGE/edit
@@ -19,7 +19,7 @@ var spreadsheetSettings = {
   clientEmail: 'this.is.also.included@in.secrets.json.file'
 };
 
-app.use('/spreadsheets', spreadsheetsMiddlware(spreadsheetSettings));
+app.use('/spreadsheets', spreadsheetsConnectionTestMiddleware(spreadsheetSettings));
 ```
 
 ## usage
