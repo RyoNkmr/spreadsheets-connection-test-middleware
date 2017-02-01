@@ -23,7 +23,7 @@ app.use('/spreadsheets', spreadsheetsMiddlware(spreadsheetSettings));
 ```
 
 ## usage
-* [GET] ```/spreadsheets/test``` - test connecting and work with sheetAPI.
+* [POST] ```/spreadsheets/test``` - test connecting and work with sheetAPI.
 
     1. get information
     1. add a worksheet
@@ -39,6 +39,7 @@ app.use('/spreadsheets', spreadsheetsMiddlware(spreadsheetSettings));
 
 // but response like
 {
+  addWorksheet: true,
   setTitle: true,
   setHeaderRow: true,
   getRows: true,
@@ -47,34 +48,3 @@ app.use('/spreadsheets', spreadsheetsMiddlware(spreadsheetSettings));
   del: true
 }
 ```
-
-* [POST] ```/spreadsheets``` - add data to worksheet(*children of sheet*), ```_id``` stands worksheet title
-```javascript
-// requestBody
-{
-  _id: 'workSheetTitle', // --- required
-  col1: 'data1',
-  col2: 'data2',
-  col3: 'data3',
-  col4: 'data4',
-  ...
-}
-```
-
-
-* [POST] ```/spreadsheets/:worksheetTitle``` - add data to worksheet
-```javascript
-// requestBody
-{
-  //_id: 'workSheetTitle', --- ignored
-  col1: 'data1',
-  col2: 'data2',
-  col3: 'data3',
-  col4: 'data4',
-  ...
-}
-```
-
-In both post method endpoints, add a row on worksheet which has the same name. if no sheet exists has the same name, adding new worksheet to sheet named :worksheetTitle.
-
-
